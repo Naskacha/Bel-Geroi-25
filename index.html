@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Героят в Българската литература</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #fefcea, #f1da36);
+      overflow-x: hidden;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      animation: slideDown 1s ease-out;
+    }
+    section {
+      padding: 2rem;
+      animation: fadeIn 1.5s ease-in;
+    }
+    h2 {
+      color: #444;
+    }
+    .comparison {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .box {
+      flex: 1;
+      background: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .box:hover {
+      transform: scale(1.05);
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #222;
+      color: white;
+      font-size: 0.9rem;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Героят в Българската литература
+  </header>
+
+  <section>
+    <h2>1. Какво е героят?</h2>
+    <div class="comparison">
+      <div class="box">
+        <h3>Паисий Хилендарски</h3>
+        <p>Героят при Паисий е будител и пазител на българската памет и история. Той вдъхновява народа да не забравя своя произход.</p>
+      </div>
+      <div class="box">
+        <h3>Петко Славейков</h3>
+        <p>Героят е образ на типичния българин, често с ирония и реализъм. Показва се народопсихологията чрез битови сцени.</p>
+      </div>
+      <div class="box">
+        <h3>Христо Ботев</h3>
+        <p>Героят е борец за свобода, трагичен и идеалистичен образ, отдаден на националното освобождение.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Сравнение между авторите</h2>
+    <p>Паисий вдъхновява, Славейков осмива, а Ботев възхвалява. Общото е любовта към народа, а различието – подходът към представянето на героя.</p>
+  </section>
+
+  <section>
+    <h2>3. Как си го представяме</h2>
+    <p>Ето рисунка, която изобразява нашия герой:</p>
+    <img src="drawing.png" alt="Рисунка на героя">
+    <!-- Замени drawing.png с твоята истинска рисунка -->
+  </section>
+
+  <footer>
+    Проект по Български език - GitHub Site от Naskacha
+  </footer>
+
+  <script>
+    // Малка анимация с JavaScript за заглавието
+    const header = document.querySelector('header');
+    header.addEventListener('click', () => {
+      header.style.background = '#ffcc00';
+      header.style.color = '#000';
+      header.textContent = '🔥 ГЕРОЯТ Е СИЛА! 🔥';
+      setTimeout(() => {
+        header.style.background = '#222';
+        header.style.color = '#fff';
+        header.textContent = 'Героят в Българската литература';
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
