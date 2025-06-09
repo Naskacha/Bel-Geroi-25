@@ -5,61 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Героят в Българската литература</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #fefcea, #f1da36);
+      font-family: 'Raleway', sans-serif;
+      background: linear-gradient(to bottom right, #fefcea, #f1da36);
+      color: #222;
       overflow-x: hidden;
     }
     header {
-      background: #222;
+      background: #1e1e1e;
       color: white;
-      padding: 1rem;
+      padding: 2rem 1rem;
       text-align: center;
-      font-size: 2rem;
+      font-size: 2.5rem;
       animation: slideDown 1s ease-out;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     section {
-      padding: 2rem;
+      padding: 2.5rem 10%;
       animation: fadeIn 1.5s ease-in;
     }
     h2 {
-      color: #444;
+      color: #2c2c2c;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #f1da36;
+      padding-bottom: 0.5rem;
     }
     .comparison {
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
+      justify-content: center;
     }
     .box {
-      flex: 1;
       background: white;
       padding: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
       text-align: center;
+      max-width: 300px;
     }
     .box:hover {
-      transform: scale(1.05);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
     .box img {
-      max-width: 100px;
+      max-width: 120px;
       height: auto;
       border-radius: 50%;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      border: 3px solid #f1da36;
     }
-    img {
+    img.drawing {
       max-width: 100%;
-      border-radius: 8px;
+      border-radius: 12px;
       margin-top: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     footer {
       text-align: center;
-      padding: 1rem;
-      background: #222;
+      padding: 1.5rem;
+      background: #1e1e1e;
       color: white;
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
     @keyframes slideDown {
       from { transform: translateY(-100%); opacity: 0; }
@@ -77,51 +89,50 @@
   </header>
 
   <section>
-    <h2>1. Какво е героят?</h2>
+    <h2>1. Какво е героят според Паисий, Славейков и Ботев?</h2>
     <div class="comparison">
       <div class="box">
-        <img src="https://historymuseum.org/wp-content/uploads/2021/06/paissii.jpg" alt="Паисий">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Paisiy_Hilendarski.jpg" alt="Паисий">
         <h3>Паисий Хилендарски</h3>
-        <p>Героят при Паисий е будител и пазител на българската памет и история. Той вдъхновява народа да не забравя своя произход.</p>
+        <p>Паисий създава образа на героя като съхранител на българската история и идентичност. Чрез „История славянобългарска“ той вдъхновява народа да не забравя своя произход и да се гордее с корените си.</p>
       </div>
       <div class="box">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Petko_Slaveikov.jpg/440px-Petko_Slaveikov.jpg" alt="Петко Славейков">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Petko_Slaveykov.jpg" alt="Петко Славейков">
         <h3>Петко Славейков</h3>
-        <p>Героят е образ на типичния българин, често с ирония и реализъм. Показва се народопсихологията чрез битови сцени.</p>
+        <p>Славейков представя героя през призмата на обикновения българин. Чрез хумор и ирония той подчертава както силните, така и слабите черти на народа, като акцентира върху важността на самоосъзнаването.</p>
       </div>
       <div class="box">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Hristo_Botev_portrait.jpg/440px-Hristo_Botev_portrait.jpg" alt="Христо Ботев">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Hristo_Botev_portrait.jpg" alt="Христо Ботев">
         <h3>Христо Ботев</h3>
-        <p>Героят е борец за свобода, трагичен и идеалистичен образ, отдаден на националното освобождение.</p>
+        <p>Ботев издига героя в култ – саможертвен борец за свобода и правда. Неговият герой е идеалист, готов да умре за отечеството и народната свобода, често с трагична съдба.</p>
       </div>
     </div>
   </section>
 
   <section>
     <h2>2. Сравнение между авторите</h2>
-    <p>Паисий вдъхновява, Славейков осмива, а Ботев възхвалява. Общото е любовта към народа, а различието – подходът към представянето на героя.</p>
+    <p>Тримата автори имат различен подход към образа на героя. Паисий го представя като духовен водач и исторически будител, Славейков – като реалистичен образ от народа, а Ботев – като герой-революционер. Общото между тях е стремежът към пробуждане на националното съзнание и вдъхновяване на обществото. Различията произтичат от различните цели – просветителство, социална критика и революционна пропаганда.</p>
   </section>
 
   <section>
-    <h2>3. Как си го представяме</h2>
-    <p>Ето рисунка, която изобразява нашия герой:</p>
-    <img src="drawing.png" alt="Рисунка на героя">
-    <!-- Замени drawing.png с твоята истинска рисунка -->
+    <h2>3. Как си представяме героя</h2>
+    <p>Героят е съчетание от духовна сила, мъдрост, чувство за дълг и саможертва. Представяме си го като човек, който е едновременно будител, реалист и борец. В него се събират чертите на тримата автори – мисълта на Паисий, погледа към народа на Славейков и пламенната решимост на Ботев.</p>
+    <img src="drawing.png" alt="Рисунка на героя" class="drawing">
+    <!-- Замени drawing.png с твоята рисунка -->
   </section>
 
   <footer>
-    Проект по Български език - GitHub Site от Naskacha
+    Проект по Български език • GitHub Site от Naskacha • 2025
   </footer>
 
   <script>
-    // Малка анимация с JavaScript за заглавието
     const header = document.querySelector('header');
     header.addEventListener('click', () => {
       header.style.background = '#ffcc00';
       header.style.color = '#000';
       header.textContent = '🔥 ГЕРОЯТ Е СИЛА! 🔥';
       setTimeout(() => {
-        header.style.background = '#222';
+        header.style.background = '#1e1e1e';
         header.style.color = '#fff';
         header.textContent = 'Героят в Българската литература';
       }, 2000);
