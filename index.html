@@ -7,36 +7,42 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: 'Raleway', sans-serif;
-      background: linear-gradient(to bottom right, #fefcea, #f1da36);
-      color: #222;
-      overflow-x: hidden;
+      background: linear-gradient(to bottom right, #fffdf5, #ffe566);
+      color: #1e1e1e;
     }
 
     header {
-      background: #1e1e1e;
-      color: white;
-      padding: 2rem 1rem;
+      background: linear-gradient(45deg, #1e1e1e, #2c2c2c);
+      color: #fff;
+      padding: 2.5rem 1rem;
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 2.7rem;
+      font-weight: bold;
       animation: slideDown 1s ease-out;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      letter-spacing: 2px;
     }
 
     section {
-      padding: 2.5rem 10%;
+      padding: 3rem 10%;
       animation: fadeIn 1.5s ease-in;
     }
 
     h2 {
-      color: #2c2c2c;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #1e1e1e;
       border-bottom: 2px solid #f1da36;
       padding-bottom: 0.5rem;
-      text-align: center;
     }
 
     .comparison {
@@ -48,45 +54,51 @@
 
     .box {
       background: white;
-      padding: 1rem;
-      border-radius: 16px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-      transition: transform 0.3s, box-shadow 0.3s;
+      padding: 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(255, 209, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       text-align: center;
       max-width: 300px;
     }
 
     .box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
     }
 
     .box img {
       max-width: 120px;
-      height: auto;
       border-radius: 50%;
+      border: 4px solid #f1da36;
       margin-bottom: 1rem;
-      border: 3px solid #f1da36;
     }
 
     img.drawing {
       max-width: 100%;
       border-radius: 12px;
       margin-top: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
     }
 
     .caption {
       margin-top: 0.5rem;
       font-weight: bold;
+      font-size: 1rem;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      line-height: 1.6;
     }
 
     footer {
       text-align: center;
-      padding: 1.5rem;
+      padding: 2rem 1rem;
       background: #1e1e1e;
       color: white;
       font-size: 1rem;
+      letter-spacing: 1px;
     }
 
     @keyframes slideDown {
@@ -97,6 +109,15 @@
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
+    }
+
+    a {
+      color: #d18700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -128,12 +149,12 @@
 
   <section>
     <h2>2. Сравнение между авторите</h2>
-    <p>Тримата автори имат различен подход към образа на героя. Паисий го представя като духовен водач и исторически будител, Славейков – като реалистичен образ от народа, а Ботев – като герой-революционер. Общото между тях е стремежът към пробуждане на националното съзнание и вдъхновяване на обществото. Различията произтичат от различните цели – просветителство, социална критика и революционна пропаганда.</p>
+    <p>Паисий представя духовен водач, Славейков – реалистичен народен тип, а Ботев – революционер. Всички те целят пробуждане на народа, но с различни методи: просвета, хумор и саможертва.</p>
   </section>
 
   <section>
     <h2>3. Как си представяме героя</h2>
-    <p>Героят е съчетание от духовна сила, мъдрост, чувство за дълг и саможертва. Представяме си го като човек, който е едновременно будител, реалист и борец. В него се събират чертите на тримата автори – мисълта на Паисий, погледа към народа на Славейков и пламенната решимост на Ботев.</p>
+    <p>Героят съчетава мъдростта на Паисий, реализъмa на Славейков и решимостта на Ботев. Той е носител на ценности, борбен дух и вдъхновение за бъдещите поколения.</p>
     <div class="comparison">
       <div class="box">
         <img src="geroi-paisiy.jpg" alt="Герой Паисий" class="drawing">
@@ -152,13 +173,13 @@
 
   <section>
     <h2>4. Източници</h2>
-    <p>Информацията в този проект е събрана и структурирана с помощта на образователни ресурси, учебни материали и съвременни технологии. За синтезиране и формулиране на текстовете беше използван <strong>изкуствен интелект</strong>, за да се осигури яснота и точност.</p>
-    <p><a href="https://chat.openai.com" target="_blank" style="color: #1e1e1e; font-weight: bold;">Използван източник: ChatGPT</a></p>
+    <p>Текстовете са генерирани и оформени с помощта на <strong>изкуствен интелект</strong> (ChatGPT), базирани на учебници, уроци и българска литература.</p>
+    <p><a href="https://chat.openai.com" target="_blank">Използван източник: ChatGPT</a></p>
   </section>
 
   <section>
     <h2>5. Обратна връзка</h2>
-    <p>Благодарим, че разгледахте нашия сайт! Ще се радваме да отговорите на няколко кратки въпроса, за да разберем дали съдържанието е било полезно и разбираемо за вас.</p>
+    <p>Благодарим, че разгледахте нашия сайт! Ще се радваме да отговорите на няколко въпроса:</p>
     <ol style="margin-left: 1.5rem;">
       <li>Какво научихте за героя в творчеството на Христо Ботев?</li>
       <li>Кой от тримата автори ви впечатли най-много и защо?</li>
@@ -169,19 +190,5 @@
   <footer>
     Проект по Български език • GitHub Site от Атанас Тодоров и Габриел Динков • 2025
   </footer>
-
-  <script>
-    const header = document.querySelector('header');
-    header.addEventListener('click', () => {
-      header.style.background = '#ffcc00';
-      header.style.color = '#000';
-      header.textContent = '🔥 ГЕРОЯТ Е СИЛА! 🔥';
-      setTimeout(() => {
-        header.style.background = '#1e1e1e';
-        header.style.color = '#fff';
-        header.textContent = 'Героят в Българската литература';
-      }, 2000);
-    });
-  </script>
 </body>
 </html>
